@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proceedural Erasure Poetry Generator</title>
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <script src="main.js" defer type="text/javascript"></script>
+</head>
+<body>
+    <form>
+        <div class="inputGroup">
+            <label>Enter the text to erase from here...</label>
+            <textarea id="poemInput">
+FORGET WHAT DID
+
+Stopping the diary
+Was a stun to memory,
+Was a blank starting,
+
+One no longer cicatrized
+By such words, such actions
+As bleakened waking.
+
+I wanted them over,
+Hurried to burial
+And looked back on
+
+Like the wars and winters
+Missing behind the windows
+Of an opaque childhood.
+
+And the empty pages ?
+Should they ever be filled
+Let it be with observed
+Celestial recurrences,
+The day the flowers come,
+And when the birds go.
+            </textarea>
+        </div>
+        <div class="inputGroup">
+            <label for="percentageInput">Erasure Percentage:</label>
+            <input id="percentageInput" name="percentageInput" type="range" min="0" max="100" value="85"></input>
+        </div>
+        <div class="inputGroup">
+            <button onClick="generateErasure(); return false">Generate Erasure</button>
+        </div>
+    </form>
+    <div id="poemOutput" class="poetry">
+        <!-- Poem will be displayed generated here once generated -->
+    </div>
+</body>
+</html>
