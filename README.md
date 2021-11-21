@@ -18,7 +18,7 @@ You can learn more about erasure poetry here: https://en.wikipedia.org/wiki/Eras
 
 ## How
 
-In order to make the erasures from the poem contiguous (other digital versions of erasues tend to have gaps where the space characters in the original would have been), the app actually erases all of the poem by default, and marks the sections to be revealed using `<mark\` tags.
+In order to make the erasures from the poem contiguous (other digital versions of erasues tend to have gaps where the space characters in the original would have been), the app actually erases all of the poem by default, and marks the sections to be revealed using `<mark>` tags.
   
 I liked the idea of `<mark>` tags because although the natural way to think about erasue poetry is choosing which words to erase from the original poem, in fact what is significant is what words are retained. 
 
