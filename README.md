@@ -24,7 +24,7 @@ I like the semantics of `<mark>` tags here because although the natural way to t
 
 ## What next?
 
-  1. Currently the script identifies how many words to reveal based on the percentage set by the user, and then chooses them at random. This means that someties the script chooses the same word to reveal more than once, resulting in the wrong number of words being revealled overall.
+  1. Currently the script identifies how many words to reveal based on the percentage set by the user, and then chooses them at random. This means that sometimes the script chooses the same word to reveal more than once or chooses a black line to 'reveal', resulting in the wrong number of words being revealled overall.
 
   2. I'd like to find a way to make the erasure accessibly to screenreader software, so that users will hear the revealed words of the source poem only.
   
