@@ -83,10 +83,9 @@ button:focus-visible {
 
 .poetry .line {
   display: inline;
-  text-indent: -1em;
-  margin-left: 1em;
+  margin-left: -1em;
   position: relative;
-  right: 1em;
+  left: 1em;
   background-color: var(--text);
   padding-bottom: 0.3em;
   transform: 0.6s ease;
