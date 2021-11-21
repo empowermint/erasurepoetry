@@ -1,5 +1,5 @@
 # erasurepoetry
-A one-page app that generates erasure poetry
+A one-page app that generates erasure poetry from a user's text
 
 View the live site here: https://empowermint.github.io/erasurepoetry/
 
@@ -18,18 +18,14 @@ You can learn more about erasure poetry here: https://en.wikipedia.org/wiki/Eras
 
 ## How
 
-In order to make the erasures from the poem contiguous (other digital versions of erasues tend to have gaps where the space characters in the original would have been), the app actually erases all of the poem by default, and marks the sections to be revealed using `<mark>` tags.
+Other digital versions of erasues tend to have gaps where the space characters in the original would have been. In order to make the erasures from the poem contiguous, this app actually erases all of the poem by default, and marks the sections to be revealed using `<mark>` tags.
   
-I like the semantics of `<mark>` tags here because although the natural way to think about erasue poetry is choosing which words to erase from the original poem, in fact what is significant is what words are retained. 
+I like the semantics of `<mark>` tags here because, although the natural way to think about erasue poetry is choosing which words to erase from the original poem, in fact what is significant is which words are retained. 
 
 ## What next?
 
-  1. Currently the script identifies how many words to reveal based on the percentage set by the user, and then chooses them at random. This means that sometimes the script chooses the same word to reveal more than once or chooses a black line to 'reveal', resulting in the wrong number of words being revealled overall.
-
-  2. I'd like to find a way to make the erasure accessibly to screenreader software, so that users will hear the revealed words of the source poem only.
-  
-  3. I'd like to better display the erasure percentage selected from the slider to the user so they can check they have selected the right number.
-  
+  1. Currently the script identifies how many words to reveal based on the percentage set by the user, and then chooses those words at random. This means that sometimes the script chooses the _same_ word to reveal more than once, or reveals a blank line. This results in the wrong number of words being revealed overall, and sometimes visual artefacts in the bottom-left corners of a stanza.
+  2. I'd like to find a way to make the erasure more accessible to screenreader software, so that users will hear the revealed words of the source poem only.
+  3. I'd like to better display the erasure percentage selected from the slider to the user so they can check they have selected the number they want.
   4. The app could be more usable for users with less knowledge of poetry or technology!
-  
-  5. The typography displays fine for traditional line-based poetry, but the generated stanza breaks are just empty lines. I'd like to replace these with `<p>` tags to improve the semantic quality of the generated HTML, and to allow for more customisable display.
+  5. The generated stanza breaks are currently just empty lines. I'd like to replace these with `<p>` tags to improve the semantic quality of the generated HTML, and to allow for more customisable display.
